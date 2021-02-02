@@ -1,6 +1,5 @@
 package unit_1;
 
-import java.util.Iterator;
 
 public class CharacterClass {
 
