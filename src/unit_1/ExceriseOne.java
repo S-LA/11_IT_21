@@ -5,7 +5,7 @@ public class ExceriseOne {
 		
 		char letter = '\t';
 		int num = 32;
-		System.out.println((char)9 + Character.isWhitespace(letter));
+		System.out.println(Character.isWhitespace(letter));
 		System.out.println(Character.isWhitespace(num));
 		
 //		int check = 102;
