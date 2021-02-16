@@ -1,0 +1,18 @@
+----------------------------------------------------------
+CHECKPOINT 2 page 12
+----------------------------------------------------------
+1.1)	.compareTo() returns an int this allows us to check 
+		things like alphabetical order.
+		.equals() returns a boolean this only allows to check
+		if the two Strings are the same or not.
+		
+1.2) Refer to TheStringClass.java
+
+2) if(word1.compareTo(word2) == 0) == if(word1.equals(word2))
+
+3) 	It compared Strings regardless of case. People do not consider
+	case to be important when inputting data.
+	
+4) We need a value to be returned to do something with it.
+
+5) 
