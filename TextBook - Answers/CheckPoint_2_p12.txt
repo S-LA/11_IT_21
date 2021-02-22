@@ -15,4 +15,21 @@ CHECKPOINT 2 page 12
 	
 4) We need a value to be returned to do something with it.
 
-5) 
+5.1) -1
+5.2) true 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
