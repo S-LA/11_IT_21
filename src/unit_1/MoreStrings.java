@@ -13,20 +13,20 @@ public class MoreStrings {
 		 *  by declaring them as objects.
 		 */
 		
-		String name1 = "Sam";
+//		String name1 = "Sam";
 		// this is the primitive type way of declaring/
-		String name2 = new String("Jane");
+//		String name2 = new String("Jane");
 		// where this used the new operator, thus making an object.
 		// name2 is now the address that references an object in memory which is 
 		// a String.
 		
 		/* DECLARATION */
-		String name3; 
+//		String name3; 
 		// we are going to use a variable named string but it does not refer to 
 		// anything yet.
 		
 		/* INSTANTIATION */
-		name3 = new String("Jeff");
+//		name3 = new String("Jeff");
 		// places a new object in memory that is related to the name3.
 		
 		/* Why we can't use == and must use .equals */

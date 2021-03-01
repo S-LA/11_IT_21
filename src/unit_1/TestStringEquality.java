@@ -8,7 +8,7 @@ public class TestStringEquality {
 		String str3 = str1;
 		String str4 = new String(str1);
 		String strA = "xyz";
-		String strB = "A String is a sequence of characters";
+//		String strB = "A String is a sequence of characters";
 		String strC = strA;
 		String strD = new String(strA);
 		
