@@ -6,5 +6,7 @@ public class UsingConsoleWithScanner {
 		Scanner console = new Scanner(System.in);
 		String input = console.nextLine();
 		System.out.print(input);
+		console.close();
 	}
+	
 }

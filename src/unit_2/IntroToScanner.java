@@ -25,6 +25,7 @@ public class IntroToScanner {
 		
 		boolean ans = scLine.nextBoolean();
 		System.out.println(ans);
+		scLine.close();
 	}
 	// Sec0nd@ryIt
 }

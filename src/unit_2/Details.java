@@ -1,6 +1,6 @@
 package unit_2;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -27,6 +27,7 @@ public class Details {
 		
 		System.out.print("INFO\n" + "Name: " + name + "\nID: " + id + "\nHeight: " + h + "\nsmoke: " + smoke);  
 		
+		scan.close();
 //		ArrayList<String> check = new ArrayList<String>(); 
 ////		int counter = 0;
 //		while(scan.hasNext()) {

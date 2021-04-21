@@ -38,6 +38,11 @@ public class MemoryManagement {
 			array_Num2[i] = i;
 		}
 		checkmem();
+		int[] array_Num5 = new int[100000000];
+		for (int i = 0; i < 1000; i++) {
+			array_Num5[i] = i;
+		}
+		checkmem();
 	
 	}
 
