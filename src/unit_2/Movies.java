@@ -3,7 +3,7 @@ package unit_2;
 import javax.swing.JOptionPane;
 
 import java.io.File;
-import java.io.FileReader;
+//import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -36,6 +36,7 @@ public class Movies {
 				messageOut.append(input);
 				messageOut.append("\n");
 			}
+			scan.close();
 			
 			JOptionPane.showMessageDialog(null, messageOut);
 			

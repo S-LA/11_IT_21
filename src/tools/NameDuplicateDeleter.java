@@ -57,6 +57,7 @@ public class NameDuplicateDeleter {
 			} 
 		}
 		long delta = System.nanoTime() - start;
+		System.out.println(allDoneCount);
 //834300
 		for (String value : inputNames) {
 			System.out.println(value);
