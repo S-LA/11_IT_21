@@ -30,9 +30,7 @@ public class IntroToOOP {
 		line.draw();
 		line.pattern = '&';
 		line.draw();
-		
-		line.draw();
-		
+		line.draw();	
 	}
 }
 
