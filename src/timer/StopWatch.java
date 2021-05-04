@@ -9,6 +9,14 @@ public class StopWatch {
 	public StopWatch(int number) {
 		System.out.println("New StopWatch Created. (#" + number + ")" );
 	}
+	public StopWatch() {
+		System.out.println(
+				"This is a polymorphic constructor");
+	}
+	public StopWatch(String words) {
+		System.out.println(
+				"This is timer " + words);
+	}
 	// private data types are those
 	// that can only be changed via 
 	// calling methods that belong to
@@ -29,9 +37,24 @@ public class StopWatch {
 		delta = delta/1_000_000;
 		return delta;
 	}
+	public double getSeconds() {
+		double seconds = stopTime - startTime;
+		seconds = seconds / 1000_000_000.0;
+		seconds = seconds * 1000.0;
+		seconds = Math.round(seconds);
+		seconds = seconds / 1000.0;
+		return seconds;
+	}
+	
 	
 	
 }
+
+
+
+
+
+
 
 
 
