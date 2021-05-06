@@ -2,20 +2,27 @@ package timer;
 
 public class StopWatch {
 	
+	public static int counter = 0;
+	private int thisTimer = 0;
 	// a constructor will be run
 	// every time we make a new object
 	// it allows parameters to be set for
 	// each object.
 	public StopWatch(int number) {
 		System.out.println("New StopWatch Created. (#" + number + ")" );
+		counter++;
+		thisTimer = counter;
 	}
 	public StopWatch() {
 		System.out.println(
 				"This is a polymorphic constructor");
+		counter++;
+		thisTimer = counter;
 	}
 	public StopWatch(String words) {
-		System.out.println(
-				"This is timer " + words);
+		System.out.println("This is timer " + words);
+		counter++;
+		thisTimer = counter;
 	}
 	// private data types are those
 	// that can only be changed via 
@@ -44,6 +51,10 @@ public class StopWatch {
 		seconds = Math.round(seconds);
 		seconds = seconds / 1000.0;
 		return seconds;
+	}
+	
+	public void printCounter() {
+		System.out.println("This is timer #" + thisTimer);
 	}
 	
 	

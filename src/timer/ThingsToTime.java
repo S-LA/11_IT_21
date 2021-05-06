@@ -6,6 +6,9 @@ public class ThingsToTime {
 		StopWatch one = new StopWatch(1);
 		StopWatch two = new StopWatch();
 		StopWatch three = new StopWatch("Three");
+		one.printCounter();
+		two.printCounter();
+		three.printCounter();
 		one.setStart();
 		
 		three.setStart();
