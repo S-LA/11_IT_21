@@ -6,28 +6,31 @@ public class MemoryManagement {
 		long heapSize = Runtime.getRuntime().totalMemory();
 
 		// Get maximum size of heap in bytes
-		long heapMaxSize = Runtime.getRuntime().maxMemory();
+		// long heapMaxSize = Runtime.getRuntime().maxMemory();
 
 		// get free memory
-		long heapFreeSize = Runtime.getRuntime().freeMemory();
-		double heapUsedSize = Math.round(heapSize - heapFreeSize);
-				
-		System.out.println("max size    : " + (heapMaxSize / (1024 * 1024)) + " MB");
-		System.out.println("current size: " + (heapSize / (1024 * 1024)) + " MB");
-		System.out.println("free mem    : " + (heapFreeSize / (1024 * 1024)) + " MB");
-		System.out.println("used mem    : " + Math.round(heapUsedSize/ (1024 * 1024)) + " MB\n");
+		long heapFreeSize = Math.round(Runtime.getRuntime().freeMemory());
+		double heapUsedSize = Math.round((heapSize - heapFreeSize));
+//		System.out.println("max size    : " + (heapMaxSize / (1024 * 1024)) + " MB");
+//		System.out.println("current size: " + (heapSize / (1024 * 1024)) + " MB");
+//		System.out.println("free mem    : " + (heapFreeSize / (1024 * 1024)) + " MB");
+//		System.out.println("used mem    : " + Math.round(heapUsedSize / (1024 * 1024)) + " MB\n");
+
+		System.out.print("HEAP ## " +Math.round((heapUsedSize / (1024 * 1024))) + "\t");
+		System.out.print((heapFreeSize / (1024 * 1024)) + "\t");
+		System.out.print(Math.round(heapSize / (1024 * 1024)) + "\n");
 	}
 
 	public static void main(String[] args) {
 		// Get current size of heap in bytes
 		checkmem();
-		
+
 		int[] array_Num = new int[100000000];
 		for (int i = 0; i < 1000; i++) {
 			array_Num[i] = i;
 		}
 		checkmem();
-		
+
 		int[] array_Num1 = new int[100000000];
 		for (int i = 0; i < 1000; i++) {
 			array_Num1[i] = i;
@@ -43,20 +46,7 @@ public class MemoryManagement {
 			array_Num5[i] = i;
 		}
 		checkmem();
-	
+
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
