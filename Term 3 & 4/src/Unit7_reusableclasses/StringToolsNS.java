@@ -74,7 +74,7 @@ public class StringToolsNS {
 			boolean a1 = Character.isLetter(prev);
 			int a2 = VOWELS.indexOf(curr);
 			int a3  = VOWELS.indexOf(curr);
-			if(!Character.isLetter(prev) && VOWELS.indexOf(curr) >= 0 || VOWELS.indexOf(curr) == -1){
+			if(Character.isLetter(prev) == false && VOWELS.indexOf(curr) >= 0 || VOWELS.indexOf(curr) == -1){
 				newStr = newStr + curr;
 			}
 		}
