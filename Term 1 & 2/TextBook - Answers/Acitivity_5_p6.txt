@@ -1,0 +1,37 @@
+---------------------------------------------- 
+Method Analysis Table
+-----------------------------------------------
+Name				|sqrt
+Static or non static|static
+Data in (parameter) |double
+Data out (return)	|double
+Brief Description	|Returns the correctly rounded positive square root of a double value. 
+Method Call example |double x = Math.sqrt(25);
+---------------------------------------------- 
+Name				|pow
+Static or non static|static
+Data in (parameter) |double base, double exponent
+Data out (return)	|double (value of a^b)
+Brief Description	|Returns the value of the first argument raised 
+					 to the power of the second argument. 
+Method Call example |double ex = Math.pow(2,5);
+---------------------------------------------- 
+Name				|abs
+Static or non static|static
+Data in (parameter) |int || double || float || long
+Data out (return)	|int || double || float || long
+Brief Description	|Returns the absolute value of an input value.
+Method Call example |int x = Math.absolute(-5);
+---------------------------------------------- 
+Name				|round
+Static or non static|static
+Data in (parameter) |float || double
+Data out (return)	|  int || long
+Brief Description	|Returns the closest long/int to the argument.
+Method Call example |int x = Math.round(4.32);
+---------------------------------------------- 
+
+
+
+
+
