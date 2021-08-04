@@ -15,11 +15,23 @@ public class TestingStringNS {
 		up.firstCaps();
 		System.out.println(up.getStr());
 		
-		StringToolsNS rv = new StringToolsNS("remove the vowels");
+		StringToolsNS rv = new StringToolsNS("remove# the vowels");
 		rv.removeVowels();
 		System.out.println(rv.getStr());
 		System.out.println();
 		
+		StringToolsNS validate = new StringToolsNS("Is thi$ valid?");
+		boolean isValid = validate.validString();
+		System.out.println(isValid);
+		
+		StringToolsNS validate2 = new StringToolsNS("Is this valid");
+		boolean isValid2 = validate2.validString();
+		System.out.println(isValid2);
+		
+		String lots = "The Temple. of Courage at Suncity is";
+		StringToolsNS pig = new StringToolsNS(lots);
+		pig.pigLation();
+		System.out.println(pig.getStr());
 	}
 }
 

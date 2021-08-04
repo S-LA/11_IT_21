@@ -61,6 +61,7 @@ public class StringToolsNS {
 		}
 		str = newStr;
 	}
+
 	public void removeVowels() {
 		String temp = " " + str;
 		String newStr = "";
@@ -71,9 +72,9 @@ public class StringToolsNS {
 		for(int i = 1; i < temp.length();i++) {
 			prev = temp.charAt(i-1);
 			curr = temp.charAt(i);
-			boolean a1 = Character.isLetter(prev);
-			int a2 = VOWELS.indexOf(curr);
-			int a3  = VOWELS.indexOf(curr);
+//			boolean a1 = Character.isLetter(prev);
+//			int a2 = VOWELS.indexOf(curr);
+//			int a3  = VOWELS.indexOf(curr);
 			if(Character.isLetter(prev) == false && VOWELS.indexOf(curr) >= 0 || VOWELS.indexOf(curr) == -1){
 				newStr = newStr + curr;
 			}
@@ -84,16 +85,62 @@ public class StringToolsNS {
 	
 	
 	
-	
-	
-	
-	
-	
+	public boolean validString() {
+		
+		String in = str;
+		
+		boolean send = true;
+		String chars = "!?#$%^&*";
+		int pos = 0;
+		while(send) {
+			String current = Character.toString(in.charAt(pos++));
+			if(chars.contains(current)) {
+				send = false;
+				break;
+			} else if(pos >= str.length()) {
+				break;
+			}
+		}
+		return send;
+	}
 	
 	
 	public void pigLation() {
+		String in = str.toLowerCase();
+		String[] splitted = in.split(" ");
 		
+		int words = splitted.length;
+		String vowels = "aeiouAEIOU";
+		
+		String newStr = "";
+		
+		for(int i = 0; i < words;i++) {
+			String currentWord = splitted[i];
+			String initLetter = Character.toString(currentWord.charAt(0));
+			
+			if(vowels.contains(initLetter)) {
+				newStr = newStr +  currentWord + "ay ";
+			} else {
+				String another  = currentWord.substring(1) + initLetter;
+				newStr = newStr + another + "ay ";
+			}
+		}
+		str = newStr;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@SuppressWarnings("unused")
 	private String moveConsonantAddAy(String w) {
 		return w;
 	}
