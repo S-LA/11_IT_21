@@ -49,6 +49,19 @@ public class GUIStuff {
 			}	
 	    });
 		
+//		diceTwoBtn.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent e) {  
+//				RandomStuff randOne = new RandomStuff();
+//				diceResultB.setText(Integer.toString(randOne.getRandomNum()));	
+//				int getResultA = Integer.parseInt(diceResultA.getText());
+//				int getResultB = Integer.parseInt(diceResultB.getText());
+//				int getFinal = getResultA + getResultB;
+//				final String send = Integer.toString(getFinal);
+//				diceResultT.setText(send);
+//			}	
+//		});
+		
+		
 		
 		f.add(infoLabel);
 		f.add(diceOneBtn);
