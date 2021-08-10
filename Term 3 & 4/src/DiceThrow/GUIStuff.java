@@ -1,5 +1,8 @@
 package DiceThrow;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -37,6 +40,14 @@ public class GUIStuff {
 		diceT_label.setBounds(10, 300, 100, 20);
 		JTextField diceResultT  =new JTextField();
 		diceResultT.setBounds(10, 320, 100, 50);
+		
+		// place activation 
+		diceOneBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {  
+				RandomStuff randOne = new RandomStuff();
+				diceResultA.setText(Integer.toString(randOne.getRandomNum()));	
+			}	
+	    });
 		
 		
 		f.add(infoLabel);
