@@ -1,5 +1,6 @@
 package DiceThrow;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,6 +12,7 @@ import javax.swing.JTextField;
 public class GUIStuff {
 	
 	public static void runGUI() {
+		
 		JFrame f = new JFrame("Dice");
 		//-------- All the parts
 		//LABEL
@@ -22,9 +24,13 @@ public class GUIStuff {
 		int btnSize = 100;
 		JButton diceOneBtn = new JButton("A");
 		diceOneBtn.setBounds(10, 50, btnSize, btnSize);
+		
 		JButton diceTwoBtn = new JButton("B");
 		diceTwoBtn.setBounds(((btnSize+20)), 50, btnSize, btnSize);
 		
+		JButton resetBtn = new JButton("RESET");
+		resetBtn.setBounds(250, 50, btnSize, btnSize);
+		resetBtn.setBackground(Color.red);
 		// TEXT OUT
 		JLabel diceA_label = new JLabel("Dice A");
 		diceA_label.setBounds(10, 160, 100, 20);
@@ -45,22 +51,34 @@ public class GUIStuff {
 		diceOneBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {  
 				RandomStuff randOne = new RandomStuff();
-				diceResultA.setText(Integer.toString(randOne.getRandomNum()));	
+				diceResultA.setText(Integer.toString(randOne.getRandomNum()));
+				diceOneBtn.setBackground(Color.green);
 			}	
 	    });
 		
-//		diceTwoBtn.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {  
-//				RandomStuff randOne = new RandomStuff();
-//				diceResultB.setText(Integer.toString(randOne.getRandomNum()));	
-//				int getResultA = Integer.parseInt(diceResultA.getText());
-//				int getResultB = Integer.parseInt(diceResultB.getText());
-//				int getFinal = getResultA + getResultB;
-//				final String send = Integer.toString(getFinal);
-//				diceResultT.setText(send);
-//			}	
-//		});
+		diceTwoBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {  
+				RandomStuff randTwo = new RandomStuff();
+				diceResultB.setText(Integer.toString(randTwo.getRandomNum()));
+				String one = diceResultA.getText();
+				int getResultA = Integer.parseInt(one);
+				int getResultB = Integer.parseInt(diceResultB.getText());
+				int getFinal = getResultA + getResultB;
+				final String send = Integer.toString(getFinal);
+				diceResultT.setText(send);
+				diceTwoBtn.setBackground(Color.green);
+			}	
+		});
 		
+		resetBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				diceOneBtn.setBackground(null);
+				diceTwoBtn.setBackground(null);
+				diceResultA.setText(null);
+				diceResultB.setText(null);
+				diceResultT.setText(null);
+			}
+		});
 		
 		
 		f.add(infoLabel);
@@ -72,6 +90,7 @@ public class GUIStuff {
 		f.add(diceResultB);
 		f.add(diceT_label);
 		f.add(diceResultT);
+		f.add(resetBtn);
 		// -------
 		f.setSize(400,420);
 		f.setLayout(null);
