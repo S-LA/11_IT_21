@@ -52,6 +52,7 @@ public class CalcGUI extends javax.swing.JFrame {
         screen.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
         screen.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
+        btn0.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn0.setText("0");
         btn0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,6 +60,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn1.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn1.setText("1");
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,6 +68,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn2.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn2.setText("2");
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +76,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn3.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn3.setText("3");
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +84,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn4.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn4.setText("4");
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +92,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn5.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn5.setText("5");
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +100,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn6.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn6.setText("6");
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +108,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn7.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn7.setText("7");
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,6 +116,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn8.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn8.setText("8");
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,6 +124,7 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
+        btn9.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btn9.setText("9");
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,6 +133,7 @@ public class CalcGUI extends javax.swing.JFrame {
         });
 
         btnDiv.setBackground(new java.awt.Color(51, 102, 255));
+        btnDiv.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btnDiv.setText("/");
         btnDiv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,7 +141,8 @@ public class CalcGUI extends javax.swing.JFrame {
             }
         });
 
-        btnComma.setBackground(new java.awt.Color(204, 0, 204));
+        btnComma.setBackground(new java.awt.Color(51, 51, 51));
+        btnComma.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btnComma.setText(".");
         btnComma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,6 +151,7 @@ public class CalcGUI extends javax.swing.JFrame {
         });
 
         btnClear.setBackground(new java.awt.Color(204, 0, 0));
+        btnClear.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btnClear.setText("C");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,6 +160,7 @@ public class CalcGUI extends javax.swing.JFrame {
         });
 
         btnTimes.setBackground(new java.awt.Color(51, 102, 255));
+        btnTimes.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btnTimes.setText("*");
         btnTimes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,6 +169,7 @@ public class CalcGUI extends javax.swing.JFrame {
         });
 
         btnMinus.setBackground(new java.awt.Color(51, 102, 255));
+        btnMinus.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btnMinus.setText("-");
         btnMinus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,6 +178,7 @@ public class CalcGUI extends javax.swing.JFrame {
         });
 
         btnPlus.setBackground(new java.awt.Color(51, 102, 255));
+        btnPlus.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         btnPlus.setText("+");
         btnPlus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,7 +270,7 @@ public class CalcGUI extends javax.swing.JFrame {
                     .addComponent(btnPlus))
                 .addGap(18, 18, 18)
                 .addComponent(btnEquals, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
@@ -296,15 +312,26 @@ public class CalcGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
-		// TODO add your handling code here:
+		operation = 4;
+		String getNum = screen.getText();
+		numA = Double.parseDouble(getNum);
+		screen.setText("");
     }//GEN-LAST:event_btnDivActionPerformed
 
     private void btnTimesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTimesActionPerformed
-		// TODO add your handling code here:
+		operation = 3;
+		String getNum = screen.getText();
+		numA = Double.parseDouble(getNum);
+		screen.setText("");
     }//GEN-LAST:event_btnTimesActionPerformed
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinusActionPerformed
 		// TODO add your handling code here:
+		operation = 2;
+		String getNum = screen.getText();
+		numA = Double.parseDouble(getNum);
+		screen.setText("");
+
     }//GEN-LAST:event_btnMinusActionPerformed
 
     private void btnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusActionPerformed
@@ -343,11 +370,27 @@ public class CalcGUI extends javax.swing.JFrame {
 		String getNumB = screen.getText();
 		numB = Double.parseDouble(getNumB);
 		Arithmetic eq = new Arithmetic(numA, numB);
-		if(operation == 1){
+		if (operation == 1) {
 			double result = eq.add();
 			screen.setText(Double.toString(result));
 		}
-		
+		if (operation == 2) {
+			double result = eq.subtract();
+			screen.setText(Double.toString(result));
+		}
+		if (operation == 3) {
+			double result = eq.multiply();
+			screen.setText(Double.toString(result));
+		}
+		if (operation == 4) {
+			if (numB == 0) {
+				screen.setText("Maths error");
+			} else {
+				double result = eq.divide();
+				screen.setText(Double.toString(result));
+			}
+		}
+
     }//GEN-LAST:event_btnEqualsActionPerformed
 
 	/**
@@ -385,7 +428,7 @@ public class CalcGUI extends javax.swing.JFrame {
 		});
 	}
 
-	private int operation = 0; // if 1+, 2-, 3*, 4/
+	private int operation = 0; // if 1+, 2-, 3*, 4/sjkvsgb
 	private double numA = 0;
 	private double numB = 0;
     // Variables declaration - do not modify//GEN-BEGIN:variables

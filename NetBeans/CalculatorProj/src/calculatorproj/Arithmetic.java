@@ -21,6 +21,8 @@ public class Arithmetic {
 		num1 = n1;
 		num2 = n2;
 	}
+	
+	
 
 	public void display() {
 		System.out.println("Num 1: " + num1 + " Num 2: " + num2);
