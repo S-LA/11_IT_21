@@ -16,13 +16,17 @@ public class StringArrayProj {
 	 */
 	public static void main(String[] args) {
 		// TODO code application logic here
+		/*
+		
 		StringArray st = new StringArray();
 		System.out.println(st.toString());
 		
 		System.out.println("SORTING");
 		st.selectionSort();
 		System.out.println(st.toString());
-		
+		*/
+
+		NumberSorting.sort(10);		
 		
 	}
 	
