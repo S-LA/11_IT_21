@@ -5,6 +5,7 @@
  */
 package stringarrayproj;
 
+import java.io.Console;
 import java.util.Random;
 
 /**
@@ -30,6 +31,7 @@ class NumberSorting {
 		for (int i : array) {
 			System.out.print(i + " ");
 		}
+		
 
 		/*
 			SORTING
