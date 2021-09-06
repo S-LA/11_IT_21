@@ -24,7 +24,12 @@ public class BubbleArrayList {
 			arr.add(r);
 		}
 
+		System.out.println(arr);
+
 		// write your own solution to do a bubble sort on the 
 		// array in the list.
+
+		
+		
 	}
 }

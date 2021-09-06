@@ -21,6 +21,7 @@ public class ArrayListSorting {
 	 */
 	public static void main(String[] args) {
 		/*
+		/*
 			Array lists are dynamic (get bigger and smaller)
 			as we add or remove.
 		*/
@@ -71,5 +72,6 @@ public class ArrayListSorting {
 		
 //		System.out.println(scan.nextLine());
 	}
+	
 	
 }
