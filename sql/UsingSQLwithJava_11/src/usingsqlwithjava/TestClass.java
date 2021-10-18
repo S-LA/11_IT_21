@@ -13,7 +13,7 @@ import java.sql.SQLException;
  */
 public class TestClass
 {
-	public static void main(String[] args) throws SQLException {
+	public static void mainA(String[] args) throws SQLException {
 			SQLConLib sqldb = new SQLConLib("eleven_marks", "it_marks", "root", "ArduinoEsp8266!");
 			sqldb.printSelectTable();
 	}
